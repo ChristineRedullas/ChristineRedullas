@@ -7,4 +7,8 @@ for text
 font-family: 'Aleo', serif;
 
 
-/*
+*/
+
+#footerimg {
+    resize: 50px;
+}
