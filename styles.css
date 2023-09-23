@@ -8,7 +8,30 @@ font-family: 'Aleo', serif;
 
 
 */
+* {
+    background-color: #f7f7f7;
+    
+}
+
+body {
+    padding: 30px;
+    
+}
+
+.mr-3 {
+    margin-right: 80px;
+}
+
+.pagenum {
+    margin-right: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
 
 #footerimg {
-    resize: 50px;
+    width: 50px;
+    height: 60px;
+    
 }
