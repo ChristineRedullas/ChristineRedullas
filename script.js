@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     setTimeout(function () {
         document.querySelector(".loadingscreen").style.display = "none";
-    }, 4000); 
+    }, 5000); 
 });
 
