@@ -6,6 +6,7 @@
 /* Global Styles */
 body, h1, h2, h3, p, a {
     font-family: 'Arimo', sans-serif;
+    text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -56,6 +57,12 @@ h1 {
     padding-bottom: 10px;
 }
 
+h1, h2, h3, h4, h5, h6, p, span {
+    text-decoration: none;
+}
+
+
+
 .social-links a {
     color: black;
     transition: color 0.3s ease;
@@ -89,5 +96,30 @@ h1 {
 
     .navbar-nav .nav-item {
         margin-left: 15px; 
+    }
+}
+
+#loadingScreen {
+    display: flex;
+    flex-direction: column;  /* Stacking vertically */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 247, 247, 0.85);
+    z-index: 1000;
+}
+
+#loadingScreen span {
+    margin: 10px 0;
+    font-size: 30px;  /* Setting the font size */
+}
+
+@media (max-width: 576px) { /* Adjusting for mobile screens */
+    #loadingScreen span {
+        font-size: 1.5rem;  /* Increase this size if you want the text even bigger */
     }
 }
