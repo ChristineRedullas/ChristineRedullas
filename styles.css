@@ -1,123 +1,129 @@
-/* styles.css */
-
-/* Importing the Arimo font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-
 /* Global Styles */
-body, h1, h2, h3, p, a {
-    font-family: 'Arimo', sans-serif;
-    text-decoration: none;
-}
-
-
-h1, h2, h3 {
-    font-family: 'Aleo', serif;
-}
-
 body {
-    background-color: #f7f7f7;
+    font-family: 'Arimo', sans-serif;
     color: black;
-    margin: 0;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+    margin: 0; 
     padding: 0;
 }
 
-.logo {
-    height: 30px;
-    width: auto;
-    margin-right: 10px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.profile-pic {
-    height: 150px;
-    width: auto;
-    border-radius: 50%;
+a:hover {
+    text-decoration: none;
 }
 
-.fullscreen-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 60px 100px;
+h3, p {
+    font-family: 'Aleo', sans-serif;
 }
 
-.container {
-    padding: 60px 100px;
-}
-
-h1 {
-    margin-bottom: 30px;
-    border-bottom: 2px solid black;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-
-
-
-.social-links a {
-    color: black;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #0073e6;
-}
-
-.navbar {
-    background-color: #f7f7f7;
-}
-
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    color: black;
-    transition: color 0.3s ease;
-}
-.navbar-nav .nav-item {
-    margin-left: 25px;  /* Adjust this value if you want them closer or further apart */
-}
-
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover {
-    color: #0073e6;  /* Adjust this to your preference for the hover color */
-}
-
-@media (max-width: 768px) {  /* Adjusting for tablets and below */
-    .fullscreen-section, .container {
-        padding: 40px 20px;  
-    }
-
-    .navbar-nav .nav-item {
-        margin-left: 15px; 
-    }
-}
-
+/* Loading Screen Styles */
 #loadingScreen {
-    display: flex;
-    flex-direction: column;  /* Stacking vertically */
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(247, 247, 247, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f7f7f7;
     z-index: 1000;
+    overflow-y: auto;
 }
 
-#loadingScreen span {
-    margin: 10px 0;
-    font-size: 30px;  /* Setting the font size */
+#navbar .navbar-brand {
+    display: none;
 }
 
-@media (max-width: 576px) { /* Adjusting for mobile screens */
-    #loadingScreen span {
-        font-size: 1.5rem;  /* Increase this size if you want the text even bigger */
+#navbar .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+}
+
+#navbar .nav-item {
+    width: 100%;
+    text-align: left;
+}
+
+#navbar .nav-link.active { 
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
+
+    #navbar .navbar-brand {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #navbar .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Section Styles */
+.fullscreen-section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 270px; /* space for the navbar */
+}
+
+@media (max-width: 768px) {
+    .fullscreen-section {
+        padding-left: 50px; /* reset the padding for mobile */
+    }
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    background-color: #a6a6a6;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.page-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+
+/* Footer Styles */
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

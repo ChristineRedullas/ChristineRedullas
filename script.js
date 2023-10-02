@@ -1,21 +1,25 @@
 // script.js
 
-document.addEventListener('DOMContentLoaded', function() {
-    let loadingScreen = document.getElementById('loadingScreen');
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.fullscreen-section');
+    const navLinks = document.querySelectorAll('#navbar .nav-link');
 
-    // Wait for 2 seconds and then fade out the loading screen
-    setTimeout(() => {
-        loadingScreen.style.transition = 'opacity 0.5s ease-out';
-        loadingScreen.style.opacity = '0';
+    window.addEventListener('scroll', function () {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
 
-        // After the transition is done, remove the loading screen from the document
-        setTimeout(() => {
-            loadingScreen.parentNode.removeChild(loadingScreen);
-        }, 500);
-    }, 2000);
-});
-
-window.addEventListener("load", function() {
-    const loader = document.getElementById("loadingScreen");
-    loader.style.display = "none";
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
 });
