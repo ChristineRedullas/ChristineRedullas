@@ -103,10 +103,8 @@ h3, p {
 }
 
 .profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 5%;
-    background-color: #a6a6a6;
+    width: 120px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
