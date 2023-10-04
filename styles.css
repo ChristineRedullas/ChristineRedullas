@@ -283,7 +283,7 @@ section {
   display: flex;
 }
 
-.about-pic {
+.about-pic, .mainpic {
   border-radius: 2rem;
 }
 
