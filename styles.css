@@ -19,6 +19,20 @@ p {
   color: rgb(85, 85, 85);
 }
 
+#mouse-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 2px solid #000; /* Modify as needed */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease; /* Adjust time for faster/slower movement */
+  display: none;
+  z-index: 1000;
+}
+
 /* TRANSITION */
 
 a,
