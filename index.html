@@ -5,24 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christine Redullas</title>
+    <link rel = "icon" href ="/assets/logo.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
 
     <nav id="desktop-nav">
-      <div class="logo">Christine Redullas</div>
+      <div class="logo">
+        <img
+          src="./assets/logo.png"
+          alt="LOGO SITE"
+          class="icon-logo"/>
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Proficiency</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Christine Redullas</div>
+      <div class="logo">
+        <img
+        src="./assets/logo.png"
+        alt="LOGO SITE"
+        class="icon-logo"/>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -48,7 +59,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume-example.pdf') "
           >
             Download Resume
           </button>
@@ -61,13 +72,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/christine-redullas/'"
+            onclick="window.open('https://www.linkedin.com/in/christine-redullas/', '_blank')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/ChristineRedullas'"
+            onclick="window.open('https://github.com/ChristineRedullas', '_blank')"
           />
         </div>
       </div>
@@ -92,7 +103,7 @@
                 class="icon"
               />
               <h3>Finish Education</h3>
-              <p>NuCamp Bootcamp<br />Frontend Development</p>
+              <p><em>NuCamp Bootcamp</em><br />Frontend Development</p>
             </div>
             <div class="details-container">
               <img
@@ -101,12 +112,12 @@
                 class="icon"
               />
               <h3>Current Education</h3>
-              <p>Computer Programmer Cetificate<br />Florida Southwestern State College</p>
+              <p><em>Florida Southwestern State College</em><br />Computer Programmer Cetificate</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I'm a Computer Science student at Florida Southwestern State College, with interest in Android app development using Kotlin. Currently, I'm expanding my programming horizons by taking class for Java and C#. While I'm keen on securing internships to sharpen my practical skills, I also have foundational experience in front-end development, proficient with HTML, CSS, and Bootstrap. As a member of the Phi Theta Kappa Honors Society, I uphold a commitment to academic excellence and continuous self-improvement.
+              I'm a Computer Programmer student at Florida Southwestern State College, with an interest in using the .NET framework with C# to build web applications. I'm expanding my programming horizons by taking Java and C# classes. I'm keen on securing internships to sharpen my practical skills and learn how to be valuable as a programmer. I also have foundational experience in front-end development and am proficient with HTML, CSS, and JavaScript. I'm an ambitious individual committed to continuous self-improvement in my programming career. I maintain a 4.0 GPA, earning me a spot in the Phi Theta Kappa Honor Society.  
             </p>
           </div>
         </div>
@@ -120,11 +131,11 @@
     </section>
     <section id="experience">
       <p class="section__text__p1"></p>
-      <h1 class="title">Knowledge</h1>
+      <h1 class="title">Proficiency</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Coding Skills</h2>
+            <h2 class="experience-sub-title">Programming Expertise</h2>
             <div class="article-container">
               <article>
                 <img
@@ -137,17 +148,7 @@
                   <p>Fundamentals</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kotlin</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -204,30 +205,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SQLite</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kotlin Coroutines</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Retrofit</h3>
-                  <p>Intermediate</p>
+                  <h3>Git</h3>
+                  <p>For Version Control</p>
                 </div>
               </article>
               <article>
@@ -238,7 +217,29 @@
                 />
                 <div>
                   <h3>React</h3>
-                  <p>Intermediate</p>
+                  <p>Fundamentals</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.NET</h3>
+                  <p>Fundamentals</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Currently Learning</p>
                 </div>
               </article>
             </div>
@@ -265,19 +266,19 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Time in Java</h2>
-            <div class="text-container">Tool to track how long you learn Java.</div>
+            <h2 class="experience-sub-title project-title">FSW TECH</h2>
+            <div class="text-container">Gadgets for FSW Students</div>
             <br>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/ChristineRedullas/FSWTECH', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Live Demo
               </button>
@@ -291,22 +292,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Never Snoozing</h2>
+            <h2 class="experience-sub-title project-title">React Weather App</h2>
             <div class="text-container">Coming Soon</div>
             <br>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/ChristineRedullas/WeatherReact', '_blank')"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              
             </div>
           </div>
           <div class="details-container color-container">
@@ -317,19 +313,20 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">C# ATM</h2>
             <div class="text-container">Coming Soon</div>
             <br>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')" 
+
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Live Demo
               </button>
@@ -363,7 +360,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/christine-redullas/">ChristineRedullas</a></p>
+          <p><a href="https://www.linkedin.com/in/christine-redullas/" target="_blank">ChristineRedullas</a></p>
         </div>
       </div>
     </section>

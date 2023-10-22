@@ -214,6 +214,10 @@ section {
   cursor: pointer;
   height: 2rem;
 }
+.icon-logo {
+  
+  height: 5rem;
+}
 
 /* BUTTONS */
 
