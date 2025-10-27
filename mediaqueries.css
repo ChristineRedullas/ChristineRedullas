@@ -101,3 +101,21 @@
       text-align: justify;
     }
   }
+
+
+  @media (max-width: 768px) {
+  .internship-detail-container {
+    flex-direction: column;       /* stack vertically */
+    text-align: center;           /* center text for better look */
+  }
+
+  .internship-section_pic-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .intern-p {
+    text-align: center;           /* center paragraph on mobile */
+  }
+}

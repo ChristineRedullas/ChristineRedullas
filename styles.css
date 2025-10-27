@@ -282,7 +282,7 @@ section {
 }
 
 .about-pic, .mainpic {
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .arrow {
@@ -311,6 +311,46 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
+#internships {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.internship-detail-container {
+  display: flex;               
+  flex-direction: row;          
+  align-items: center;       
+  justify-content: space-between; 
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  /* border: 0.1rem solid rgb(163, 163, 163); */
+  border: 1rem;
+  gap: 2rem;                    
+}
+
+.internship-section_pic-container {
+  flex: 0 0 40%;              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+}
+
+.intern-pic {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.intern-p {
+  flex: 1;                      /* let the text take remaining space */
+  text-align: left;
+}
+
 
 
 #experience {
