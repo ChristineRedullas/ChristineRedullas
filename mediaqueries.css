@@ -101,21 +101,43 @@
       text-align: justify;
     }
   }
+  /* 🖥️ Large desktop screens — prevent giant image scaling */
+@media screen and (min-width: 769px) {
+  .internship-section_pic-container {
+    flex: 0 0 320px;      /* lock the image column around 320 px */
+    max-width: 320px;
+  }
+
+  .internship-detail-container img.intern-pic {
+    max-width: 320px;     /* never exceed this size */
+    height: auto;
+    object-fit: cover;
+  }
+
+  .internship-detail-container {
+    justify-content: center;  /* keeps content centered in wide viewports */
+    gap: 3rem;                /* nice spacing between image and text */
+  }
+
+  .internship-text-container {
+    max-width: 900px;         /* avoid super-wide text lines */
+  }
+}
+
 
 
   @media (max-width: 768px) {
   .internship-detail-container {
-    flex-direction: column;       /* stack vertically */
-    text-align: center;           /* center text for better look */
+    flex-direction: column;
+    text-align: center;
   }
-
   .internship-section_pic-container {
-    width: 100%;
-    height: auto;
+    flex: 0 0 auto;
+    max-width: 100%;
     margin-bottom: 1rem;
   }
-
-  .intern-p {
-    text-align: center;           /* center paragraph on mobile */
+  .internship-text-container {
+    align-items: center;
+    text-align: center;
   }
 }

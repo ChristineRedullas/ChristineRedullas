@@ -312,12 +312,9 @@ section {
   margin: auto 0;
 }
 
-#internships {
-  position: relative;
-  margin-bottom: 8rem;
-}
 
-.internship-detail-container {
+
+/* .internship-detail-container {
   display: flex;               
   flex-direction: row;          
   align-items: center;       
@@ -325,32 +322,82 @@ section {
   padding: 1.5rem;
   background: white;
   border-radius: 2rem;
-  /* border: 0.1rem solid rgb(163, 163, 163); */
+  border: 0.1rem solid rgb(163, 163, 163);
   border: 1rem;
   gap: 2rem;                    
-}
+} */
 
-.internship-section_pic-container {
+/* .internship-section_pic-container {
   flex: 0 0 40%;              
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
   width: 400px;
+} */
+
+#internships {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.internship-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  margin-bottom: 2rem;
+}
+
+.internship-section_pic-container {
+  flex: 0 0 35%;             /* 35% width on desktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.internship-detail-container img.intern-pic,
+.internship-detail-container img.intern-pic-KS {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;             /* preserves aspect ratio */
+  object-fit: cover;        /* crops nicely if you add aspect-ratio */
+  border-radius: 2rem;
+
 }
 
 .intern-pic {
-  border-radius: 2rem;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  border-radius: 1.5rem;
   object-fit: cover;
 }
 
 .intern-p {
-  flex: 1;                      /* let the text take remaining space */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.internship-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;    /* ensures title is above paragraph */
+  justify-content: center;
+  align-items: flex-start;   /* align to left edge */
   text-align: left;
 }
 
+.intern-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
 
 #experience {
