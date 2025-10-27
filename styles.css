@@ -314,28 +314,6 @@ section {
 
 
 
-/* .internship-detail-container {
-  display: flex;               
-  flex-direction: row;          
-  align-items: center;       
-  justify-content: space-between; 
-  padding: 1.5rem;
-  background: white;
-  border-radius: 2rem;
-  border: 0.1rem solid rgb(163, 163, 163);
-  border: 1rem;
-  gap: 2rem;                    
-} */
-
-/* .internship-section_pic-container {
-  flex: 0 0 40%;              
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 400px;
-} */
-
 #internships {
   position: relative;
   margin-bottom: 8rem;
@@ -354,7 +332,7 @@ section {
 }
 
 .internship-section_pic-container {
-  flex: 0 0 35%;             /* 35% width on desktop */
+  flex: 0 0 35%;           
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,8 +344,8 @@ section {
   display: block;
   width: 100%;
   max-width: 100%;
-  height: auto;             /* preserves aspect ratio */
-  object-fit: cover;        /* crops nicely if you add aspect-ratio */
+  height: auto;             
+  object-fit: cover;        
   border-radius: 2rem;
 
 }
@@ -387,9 +365,9 @@ section {
 .internship-text-container {
   flex: 1;
   display: flex;
-  flex-direction: column;    /* ensures title is above paragraph */
+  flex-direction: column;   
   justify-content: center;
-  align-items: flex-start;   /* align to left edge */
+  align-items: flex-start; 
   text-align: left;
 }
 
